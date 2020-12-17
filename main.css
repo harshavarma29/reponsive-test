@@ -1,0 +1,241 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.thick {
+  height: 62px;
+  width: 100%;
+  background-color: rgb(214, 52, 52);
+  overflow: auto;
+}
+
+.logo {
+  width: 10%;
+  height: 25px;
+  margin: 13px;
+  padding: 5px;
+  background-color: rgba(71, 71, 71, 0.904);
+  float: left;
+}
+
+.search-opt {
+  display: inline-block;
+  width: 80%;
+  height: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+.search {
+  width: 500px;
+  padding: 5px;
+  font-size: 22px;
+  background-color: rgb(189, 11, 11);
+}
+
+.search-icon {
+  position: relative;
+  margin-left: -33px;
+  margin-top: 7px;
+  width: 25px;
+  height: 25px;
+}
+
+.light {
+  background-color: rgb(189, 11, 11);
+  width: 100%;
+  height: 40px;
+}
+
+.bw {
+  background: url('./images/B&W_bg.jpg');
+  height: 368px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.left {
+  width: 64%;
+}
+
+.details {
+  margin: 40px 30px;
+  width: 75%;  
+}
+
+.title {
+  display: block;
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.description {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.content {
+  color: white;
+}
+
+.right {
+  width: 35%;
+  height: 80px;
+  margin-top: 23px;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+}
+
+.left, .right {
+  float: left;
+}
+
+.cards, .search-opt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.adjust {
+  margin-top: -70px;
+}
+
+.ca {
+  background-color: white;
+  margin: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+  width: 320px;
+  height: 200px;
+  margin: 18px;
+}
+
+.color1 {
+  background-color: #35B3D4;
+}
+
+.color2 {
+  background-color: #1B2191;
+}
+
+.color3 {
+  background-color: #D822EE;
+}
+
+.footer-left, .footer-right {
+  width: 265px;
+  height: 250px;
+  margin: 85px 10px -15px 10px;
+  padding: 10px;
+  color: white;
+}
+
+
+@media screen and (max-width: 1370px) {
+  .adjust {
+    margin: 40px;
+  }
+
+  .right {
+    margin-top: 68px;
+  }
+
+  .image {
+    margin-top: 70px;
+  }
+
+  .search-opt {
+    display: block;
+  }
+
+  .search-icon {
+    margin-left: -35px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left, .right {
+    width: 100%;
+  }
+
+  .bw {
+    overflow: auto;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 25px;
+  }
+
+  .search-opt {
+    width: 70%;
+    overflow: auto; 
+    margin-top: 5px;
+  }
+   
+  .search {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ca {
+    width: 120%;
+    height: 60px;
+    border-radius: 10px;
+  }
+
+  .card {
+    width: 120%;
+    height: 60px;
+    margin: 0px;
+    margin-left: -20px;
+  }
+
+  .details {
+    margin-top: 5px;
+  }
+
+  .right {
+    margin-top: 80px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+  
+  .bw {
+    overflow: hidden;
+  }
+
+  .footer-left, .footer-right {
+    height: 100px;
+    margin-top: 3px;
+  }
+}
